@@ -60,19 +60,19 @@
             <p class="u-text pt-1">Address - {{$user->address}}</p>
             @endif
             <div class="d-flex">
-                <div class="u-hobby border m-2 p-2 mt-0 pt-0">
+                {{-- <div class="u-hobby border m-2 p-2 mt-0 pt-0">
                     <p class="user-hobby">
                         Hobbies -
+                        dd($user->hobby)
                         @php
-                            $hobbies = json_decode($user->hobby);
-                            
+                            $hobbies = json_decode($user->hobby)
                         @endphp
                        <ul>@foreach ($hobbies as $hobby)
                            <li>{{$hobby}}</li>
-                       @endforeach</ul>
+                       @endforeach</ul> 
                        
                     </p>
-                </div>
+                </div> --}}
                 <div class="u-status">
                     <p>
                         Currently - {{$user->status}}

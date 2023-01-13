@@ -5,7 +5,7 @@
 @section('content')
 
 @php
-   $hobbies = json_decode($data->hobby);
+   $hobbies = $data->hobby;
 @endphp
 <div class="container">
     <div class="row"> 

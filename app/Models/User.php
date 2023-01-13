@@ -28,15 +28,15 @@ class User extends Authenticatable
         'status'
         
     ];
-    public function hobbyAttr($value)
-    {
-        $this->attributes['hobby'] = json_encode($value);
-    }
+    // public function hobbyAttr($value)
+    // {
+    //     $this->attributes['hobby'] = json_encode($value);
+    // }
 
-    public function gethobbyAttr($value)
-    {
-        return $this->attributes['hobby'] = json_decode($value);
-    }
+    // public function gethobbyAttr($value)
+    // {
+    //     return $this->attributes['hobby'] = json_decode($value);
+    // }
 
     /**
      * The attributes that should be hidden for serialization.
